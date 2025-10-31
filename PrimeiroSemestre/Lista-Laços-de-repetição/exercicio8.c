@@ -4,8 +4,10 @@
 
 int main(){
 	int c, n=1;
-		for(c=1; c<=30; c++){
+	printf("%d\n",n);
+		for(c=1; c<=29; c++){
 			n=n*3
 			printf("%d\n",n);
 		}
 }
+
