@@ -9,6 +9,3 @@ int main(){
 			printf("%.0f\n",pow(3,c));
 		}
 }
-
-
-
