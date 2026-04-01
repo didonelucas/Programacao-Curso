@@ -5,38 +5,37 @@ este problema.*/
 
 /*Utilizando For:*/
 #include <stdio.h>
-#define n 30
 
 int main()
-{
-    int a=1,b=0,aux,fibo=0,soma=0,i;
-    
-    for(i=0;i<n;i++){
-        fibo=fibo+a;
-        aux=a+b;
-        a=b;
-        b=aux;
+{   
+    int a=1,b=1,fibo=0,soma=2,i,n;
+    printf("Quer saber o Fibonacci até qual número?");
+    scanf("%d",&n);
+    printf("%d %d ",a,b);
+    for(i=2;i<n;i++){
+        fibo=a+b;
         printf("%d ",fibo);
+        a=b;
+        b=fibo;
         soma=soma+fibo;
     }
     printf("\nSoma dos %d primeiros termos= %d",n,soma);
     return 0;
 }
 
-/*Utilizando Do While:*/
 #include <stdio.h>
-#define n 30
 
 int main()
-{
-    int a=1,b=0,aux,fibo=0,soma=0,i=0;
-    
+{   
+    int a=1,b=1,fibo=0,soma=2,i=2,n;
+    printf("Quer saber o Fibonacci até qual número?");
+    scanf("%d",&n);
+    printf("%d %d ",a,b);
     do{
-        fibo=fibo+a;
-        aux=a+b;
-        a=b;
-        b=aux;
+        fibo=a+b;
         printf("%d ",fibo);
+        a=b;
+        b=fibo;
         soma=soma+fibo;
         i++;
     }while(i<n);
