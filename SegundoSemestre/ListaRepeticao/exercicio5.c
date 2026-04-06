@@ -1,5 +1,4 @@
-/*Faça um programa que recebe um número inteiro e imprime o somatório de seus
-divisores.*/
+/*Faça um programa que recebe um número inteiro e responda se ele é primo ou não*/
 #include <stdio.h>
 
 int main()
