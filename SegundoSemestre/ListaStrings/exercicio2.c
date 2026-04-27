@@ -7,7 +7,7 @@
 int main()
 {
     int i;
-    char palavra[10][30],primeira[10],ultima[10];
+    char palavra[10][30];
     
     for(i=0;i<10;i++){
         printf("Digite uma palavra\n");
