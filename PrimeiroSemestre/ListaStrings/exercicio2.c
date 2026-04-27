@@ -13,8 +13,7 @@ int main(){
 	printf("Digite o texto\n");
 	fgets(texto, 100, stdin);
 	
-	t = strlen(texto);
-	t=t-1;
+	t = strlen(texto)-1;
 	for(i=0; i<t; i++){
 		if(texto[i] != ' '){
 			inicio=i;
