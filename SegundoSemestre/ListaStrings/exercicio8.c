@@ -8,10 +8,10 @@ caracteres na ordem inversa. Escrever a string com a palavra invertida.*/
 int main()
 {
     int i,j,t;
-    char palavra[10][30], inversa[10][30];
+    char palavra[10][31], inversa[10][31];
     for(i=0;i<10;i++){
         printf("Escreva uma palavra:\n");
-        scanf("%29",palavra[i]);
+        scanf("%s",palavra[i]);
         t = strlen(palavra[i])-1;
         
         for(j=t; j>=0; j--){
