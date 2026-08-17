@@ -43,6 +43,7 @@ int main(){
                 break;
             case 4:
                 printf( "Saindo..." );
+                free(string);
                 exit( 1 );
         }
     }
