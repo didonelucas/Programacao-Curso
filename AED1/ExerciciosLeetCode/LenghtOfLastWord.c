@@ -1,3 +1,6 @@
+/*Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+A word is a maximal substring consisting of non-space characters only.*/
 int lengthOfLastWord(char* s) {
     int soma=0, i, tam;
 
