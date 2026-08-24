@@ -5,17 +5,13 @@ Consider the number of elements in nums which are not equal to val be k, to get 
 Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
 Return k.*/
 int removeElement(int* nums, int numsSize, int val) {
-    int i=0,k;
-    k= numsSize;
+    int i,k=0;
 
-    while(i<k){
-       if(nums[i]==val){
-            nums[i]=nums[k-1];
-            k--;
-       }
-       else{
-        i++;
-       }
+    for(i=0; i<numsSize; i++ ){
+        if(nums[i] != val){
+            nums[k] = nums[i];
+            k++;
+        }
     }
     return k;
 }
