@@ -11,18 +11,18 @@ answer[i] == i (as a string) if none of the above conditions are true.*/
 char** fizzBuzz(int n, int* returnSize) {
     int i;
     char** saida = (char**)malloc(n* sizeof(char*));
+    *returnSize = n;
     for(i=1; i<=n;i++){
-        if((i%3==0) && (i%5==0)){
+        saida[i-1] = (char*)malloc(9* sizeof(char));
+        if(i%15==0){
             saida[i-1]= "FizzBuzz";
         }else if(i%3==0){
             saida[i-1]= "Fizz";
         }else if(i%5==0){
             saida[i-1]= "Buzz";
         }else{
-            saida[i-1] = (char*)malloc(10* sizeof(char));
             sprintf(saida[i-1],"%d",i);
         }    
     }
-    *returnSize = n;
     return saida;
 }
