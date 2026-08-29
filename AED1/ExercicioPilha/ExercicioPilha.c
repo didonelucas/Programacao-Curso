@@ -52,6 +52,7 @@ int main(){
                 for(i=0;i<pilha.topo;i++){
                     printf("%s\n%d\n",&pilha.pessoas[i].nome,pilha.pessoas[i].idade);
                 }
+                break;
             case 5:
                 printf("Saindo...");
                 exit(1);
