@@ -9,6 +9,13 @@ If there are two middle nodes, return the second middle node.*/
  *     struct ListNode *next;
  * };
  */
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
 struct ListNode* middleNode(struct ListNode* head) {
     struct ListNode *start;
     int tam=0;
@@ -22,7 +29,7 @@ struct ListNode* middleNode(struct ListNode* head) {
     start = head; 
 
     for(int i=0; i<tam/2; i++){
-        start = start->next;    //Ando até o valor da metade da lista
+        start = start->next;    //Ando até o valor do nodo do meio da lista
     }
     return start;  //Retorno o resto da lista a partir do nodo do meio
 }
