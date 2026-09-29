@@ -31,7 +31,12 @@ int main(){
                 }
             break;
             case 2:
-                pop(&f);
+                if(isEmpty(&f)==0){
+                    pop(&f);
+                }
+                else{
+                    printf("Fila Vazia");
+                }
             break;
             case 3:
                 for(int i=0; i<f.fim;i++){
@@ -66,6 +71,6 @@ void pop(Fila *fila){
 
     for(i=0;i<(fila->fim-1);i++){
         fila->vetor[i]=fila->vetor[i+1];
-        fila->fim--;
     }
+    fila->fim--;
 }
